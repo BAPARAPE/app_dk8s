@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: app-dk8s 
+spec: 
+  replicas: 2
+  selector:  
+    matchLabels: 
+      app: app-dk8s
+  template: 
+    metadata: 
+      labels: 
+        app: app-dk8s 
+    spec: 
+      containers: 
+      - name: app-dk8s 
+        image: baparape/app_dk8s:latest
+        ports:
+        - containerPort: 8080         
