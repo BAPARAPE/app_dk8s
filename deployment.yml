@@ -16,4 +16,4 @@ spec:
       - name: app-dk8s 
         image: baparape/app_dk8s:latest
         ports:
-        - containerPort: 8080         
+        - containerPort: 5000         
